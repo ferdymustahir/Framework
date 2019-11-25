@@ -41,7 +41,7 @@
             @if(Auth::user()->id_user == '2')
                 <td>
                 @if($p->foto!=null)
-                <a href="{{asset('assets/images/buktiinfaq/'.$p->foto)}}" target="blank" class="btn btn-info" title="Lihat Foto"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                <a href="{{asset('assets/images/buktiinfaq/'.$p->foto)}}" target="blank" class="btn btn-info" title="Lihat Foto"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
                 @endif
 			    </td>
             @endif

@@ -17,7 +17,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="asset/logo.png">
+    <link rel="shortcut icon" href="{{url('assets/images/icon')}}/logo.png">
 
         <title>@yield('title')</title>
 
@@ -27,7 +27,9 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-image: url('assets/images/icon/bg.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -70,7 +72,8 @@
                 text-transform: uppercase;
             }
             .jumbotron {
-            background-color: black;
+            background: linear-gradient(#1cb5e0, #000046);
+            background-size: cover;
             color: whitesmoke;
         }
 
@@ -89,6 +92,13 @@
         .login{
             width:40%;
             margin:100px auto;
+        }
+        .thumbnail{
+            background-color: whitesmoke;
+        }
+        .thumbnail img{
+            height: 75px;
+            width: 75px;
         }
 
             .m-b-md {
@@ -118,7 +128,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ route('base.url')}}">Home</a></li>
                     <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kas <span class="caret"></span></a>
           <ul class="dropdown-menu">

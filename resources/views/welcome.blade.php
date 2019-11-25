@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a href="#"><img src="asset/dollar.png" alt="..."></a>
+                    <a href="#"><img src="{{url('assets/images/icon')}}/dollar.png" alt="..."></a>
                     <div class="caption">
                         <h3>Pemasukan </h3>
                     </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a href="#"><img src="asset/outcome.png" alt="..."></a>
+                    <a href="#"><img src="{{url('assets/images/icon')}}/outcome.png" alt="..."></a>
                     <div class="caption">
                         <h3>Pengeluaran</h3>
                     </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a href="#"><img src="asset/analysis.png" alt="..."></a>
+                    <a href="#"><img src="{{url('assets/images/icon')}}/analysis.png" alt="..."></a>
                     <div class="caption">
                         <h3>Laporan</h3>
                     </div>

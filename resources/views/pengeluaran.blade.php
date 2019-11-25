@@ -43,6 +43,7 @@
         </table>
 
         Total = @php $jumlahsaldo = 0; @endphp @foreach($pengeluaran as $peng) @php $jumlahsaldo += $peng->jumlahpengeluaran; @endphp @endforeach {{ $jumlahsaldo }}
-
+        <br><br>
+        <a class="btn btn-info" href="{{route('saldo')}}"><span aria-hidden="true"></span>Saldo KasMas</a>
 
 @endsection

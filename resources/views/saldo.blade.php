@@ -4,7 +4,7 @@
 @section('konten')
     @if(Auth::check())
     @if(Auth::user()->id_user == '2')
-        <a class="btn btn-success" href="/inventaris/create"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Entry</a><br><br>
+        <a class="btn btn-success" href="/inventaris/create"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak Laporan</a><br><br>
     @endif
     @endif
         <div class="row">
